@@ -59,15 +59,6 @@ class KerasModel(Model):
 		fit_elapsed_time = time.time() - fit_start_time
 		fit_elapsed_time = "{:.4f}".format(fit_elapsed_time)
 
-		# np.save(f"model_inputs_{self.temp_it}.npy", {'x': inputs, 'y': targets})
-		# self.temp_it += 1
-
-		# gradients = K.gradients(self.model.output, self.model.input)  
-		# sess = K.get_session()
-		# evaluated_gradients = sess.run(gradients[0], feed_dict={self.model.input: x_reshaped})
-		# print("\nHere be gradients:")
-		# print(evaluated_gradients)
-		# print("")
 
 		assert len(history.history["loss"]) == 1, \
 			f"training history contained something more than 1 loss: {history.history}"
