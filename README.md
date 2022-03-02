@@ -1,6 +1,6 @@
 # Spatio Temporal Mobile Traffic Forecasting
 
-This is the source code of the Spatio Temporal Mobile Traffic Forecasting project done as a Master's dissertation project by Džiugas Vyšniauskas in the University of Edinburgh.
+This is the source code of the Spatio Temporal Mobile Traffic Forecasting project.
 
 The problem tackled here can be loosely stated as:  
 How can one predict the upcoming mobile internet traffic in a city, given a sequence of city-wide (geographical) traffic measurements leading to the prediction moment?
@@ -13,7 +13,7 @@ It turns out, that predicting city-wide mobile internet usage volume is similar 
 * CNN-ConvLSTM+Attention (CNN-ConvLSTM combined with an Attention mechanism)
 * PredRNN++ (an existing video prediction model: https://arxiv.org/abs/1804.06300)
 
-For more details please refer to `thesis.pdf`.
+
 
 To train a model run:
 ```
